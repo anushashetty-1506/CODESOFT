@@ -1,0 +1,166 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+    border-bottom: 5px solid #444;
+    border-radius: 0 0 10px 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+header .name-container {
+    width: 60%; 
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+ header .image {
+    max-width: 20%;
+}
+
+header .image .dp {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+/* Main content grid */
+.skillAndProjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    margin: 20px 10px;
+}
+
+/* Skills and Projects section */
+.skills-container, .projects-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+}
+
+.skill, .project {
+    display: flex;
+    align-items: center;
+}
+
+.skill img, .project img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.skill-lang {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.project-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+}
+
+.contact button {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #c43d14;
+}
+
+.con-logos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.con-logos img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.con-logos img:hover {
+    transform: scale(1.1);
+}
+
+.reach {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
